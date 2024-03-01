@@ -1,43 +1,80 @@
 # SynthMining-ML-Learning
 
-## Python Setup
+## Description
+This project demonstrates the construction and training of a simple Convolutional Neural Network (CNN) for image classification using PyTorch. The goal is to build a model capable of classifying handwritten digits from the MNIST dataset. The MNIST dataset consists of 28x28 grayscale images of digits (0-9). This should help you get familiarized with the main concepts of machine learning as well as the basics of working with pytorch.
 
-### 1. Install python version 3.11
-You can check your current installation of python by running `python --version` or `python3 --version`. If you have an outdated version or you don't have python installed, please make sure to install the latest version at https://www.python.org/downloads/
+## Getting Started
 
-### 2. Install pip
-In order to install and manage python packages, you will need to install pip. Follow the instructions here: https://pip.pypa.io/en/stable/installation/
+Follow these instructions to set up and run the project on your local machine. Once you have set up your environment, navigate to the `pytorch_intro` directory where you will be able to develop the CNN classification model and training pipeline. If you would like more practice before beginning, implement the linear regression and feed forward networks first. These will be simpler and will help you gain practice working with pytorch before you delve into the CNN.
 
-To verify you have installed pip correctly, try the following command:
-```
-> python -m pip --version 
-pip 23.1.2 from C:\Path\To\pip (python 3.11)
-```
+### Prerequisites
 
-Note that when working with different versions of python on a system, you might have to specify which one you are using. You can also create an alias for `python` or `python3` that points to the executable path for your appropriate python installation.
+- Python 3.11
 
-### 3. Setting up a python virtual environment
-When working with various python libraries, it is good practice to maintain a virtual environment, which will contain all of the appropriate modules and dependencies.
+### Installation
 
-```
-> python -m pip install virtualenv
-> python -m venv VIRTUAL-ENVIRONMENT-NAME.venv
-```
+1. Clone the repository:
 
-To activate your virtual environment:
-```
-Windows:
-> .\VIRTUAL-ENVIRONMENT-NAME.venv\Scripts\activate
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    ```
 
-MacOS / Linux:
-> ./VIRTUAL-ENVIRONMENT-NAME.venv/source/activate
-```
+2. Navigate to the project directory:
 
-### 4. Installing required packages
-With your virtual environment activated, you can install packages using pip (will be bound to the pip executable in your venv)
+    ```bash
+    cd your-repository
+    ```
 
-```
-> pip install -r requirements.txt
-```
+3. Create a virtual environment:
 
-With this, you should be all set! If you're using VSCode, make sure to select the python executable within your venv directory as your python interpreter so that linting works properly
+    ```bash
+    python3.11 -m venv venv
+    ```
+
+    For Windows users:
+
+    ```bash
+    python -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    On Linux/macOS:
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+    On Windows:
+
+    ```bash
+    .\venv\Scripts\activate
+    ```
+
+5. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+6. Install Jupyter Notebook (optional):
+
+    ```bash
+    pip install jupyter
+    ```
+
+    If you're planning to use Jupyter Notebook.
+
+7. Create a Jupyter kernel (optional):
+
+    ```bash
+    python -m ipykernel install --user --name=venv --display-name="Your Kernel Name"
+    ```
+
+    Replace "venv" with your virtual environment name and "Your Kernel Name" with the desired display name.
+
+8. Deactivate the virtual environment when you're done:
+
+    ```bash
+    deactivate
+    ```
